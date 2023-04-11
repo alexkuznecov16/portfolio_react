@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kuznecov #HOME</title>
+		<link rel="stylesheet" href="./styles/main.css" />
+		<script
+			src="https://kit.fontawesome.com/39bbe9b596.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="header-logo">
+						<span>Programmer</span> portfolio
+					</a>
+					<nav class="header-nav">
+						<a href="projects.html">Projects</a>
+						<a href="skills.html">Skills</a>
+						<a href="contacts.html">Contacts</a>
+						<div class="theme-change">
+							<div class="theme-circle"></div>
+						</div>
+					</nav>
+					<i id="popupOpen" class="fa-solid fa-bars popup"></i>
+					<div class="popup-area">
+						<span id="popupClose" class="popup-end">X</span>
+						<nav class="popup-nav">
+							<a href="projects.html">Projects</a>
+							<a href="skills.html">Skills</a>
+							<a href="contacts">Contacts</a>
+							<div class="theme-change theme-change2">
+								<div class="theme-circle"></div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<h2 class="intro__title">
+						Hi, my name is <span>Alex</span><br />a frontend developer
+					</h2>
+					<q class="intro__text">Only the one who does will learn something.</q>
+					<a class="intro-btn" href="#">Download CV</a>
+				</div>
+				<div class="rectangles">
+					<div class="rectangle rectangle-1"></div>
+					<div class="rectangle rectangle-2"></div>
+					<div class="rectangle rectangle-3"></div>
+					<div class="rectangle rectangle-4"></div>
+				</div>
+			</div>
+		</main>
+		<section class="projects">
+			<h2 class="title">Projects</h2>
+			<div class="container">
+				<nav>
+					<ul>
+						<li data-filter="all" class="all filterLi">All</li>
+						<li data-filter="dom" class="dom filterLi">DOM</li>
+						<li data-filter="react" class="react filterLi">React</li>
+						<li data-filter="api" class="api filterLi">API</li>
+					</ul>
+				</nav>
+				<div class="project__inner">
+					<a href="random-bg.html" class="box dom all">
+						<img src="./styles/img/random-color.png" alt="Random bg color" />
+						<span class="img-text">See info</span>
+					</a>
+					<a href="random-dog.html" class="box api all">
+						<img src="./styles/img/random-dog.png" alt="Random dog" />
+						<span class="img-text">See info</span>
+					</a>
+					<a href="calculator.html" class="box dom all">
+						<img src="./styles/img/calculator.png" alt="Calculator" />
+						<span class="img-text">See info</span>
+					</a>
+					<a href="quiz.html" href="#" a class="box react all">
+						<img src="./styles/img/quiz.png" alt="Quiz" />
+						<span class="img-text">See info</span>
+					</a>
+					<a href="counter.html" class="box react all">
+						<img src="./styles/img/counter.png" alt="Counter" />
+						<span class="img-text">See info</span>
+					</a>
+					<a href="popup.html" class="box dom all">
+						<img src="./styles/img/burger-popup.jpg" alt="Popup" />
+						<span class="img-text">See info</span>
+					</a>
+				</div>
+			</div>
+			<a class="see-more" href="projects.html">See more</a>
+		</section>
+		<section class="skills">
+			<h2 class="title">Skills</h2>
+			<div class="container">
+				<div class="skill__inner">
+					<div class="skill-item">
+						<h4 class="skill-name">Frontend</h4>
+						<p class="skills-text">
+							HTML, CSS, SCSS, TailwindCSS, JavaScript, ReactJS, Responsive
+							design, VS Code, Figma
+						</p>
+					</div>
+					<div class="skill-item">
+						<h4 class="skill-name">Backend</h4>
+						<p class="skills-text">API, Git, NodeJS</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="socials">
+				<a href="https://www.instagram.com/alexkuznecov__?igshid=YmMyMTA2m2Y=">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="https://www.facebook.com/AlexanderKuznecov11">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a
+					href="https://twitter.com/Alexander_kznws?t=0V3lqqvAM1qDHnBb18nfFQ&s=35"
+				>
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a href="https://vk.com/kuznec27">
+					<i class="fa-brands fa-vk"></i>
+				</a>
+				<a href="https://www.t.me/kznws">
+					<i class="fa-brands fa-telegram"></i>
+				</a>
+			</div>
+			&copy; Alexander Kuznecov 2023
+		</footer>
+
+		<script src="theme.js"></script>
+		<script src="filter.js"></script>
+		<script src="popupMenu.js"></script>
+	</body>
+</html>
